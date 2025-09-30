@@ -66,8 +66,8 @@ def mean_shift_segmentation(image_path, quantile=0.3, n_samples=500):
     
     # 保存结果
     result_bgr = cv2.cvtColor(segmented_image, cv2.COLOR_RGB2BGR)
-    cv2.imwrite('..\\result\\segmented_result.jpg', result_bgr)
-    print("分割结果已保存为 'segmented_result.jpg'")
+    cv2.imwrite('..\\result\\mean_shift_segmented_result.jpg', result_bgr)
+    print("分割结果已保存为'mean_shift_segmented_result.jpg'")
     
     return segmented_image
 
