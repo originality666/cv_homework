@@ -9,7 +9,7 @@ def mean_shift_segmentation(image_path, quantile=0.3, n_samples=500):
     
     参数:
         image_path: 图像路径
-        quantile: 用于估计带宽的分位数，值越大带宽越大s
+        quantile: 用于估计带宽的分位数,值越大带宽越大s
         n_samples: 用于估计带宽的样本数
     """
     # 读取图像
@@ -66,14 +66,14 @@ def mean_shift_segmentation(image_path, quantile=0.3, n_samples=500):
     
     # 保存结果
     result_bgr = cv2.cvtColor(segmented_image, cv2.COLOR_RGB2BGR)
-    cv2.imwrite('segmented_result.jpg', result_bgr)
+    cv2.imwrite('..\\result\\segmented_result.jpg', result_bgr)
     print("分割结果已保存为 'segmented_result.jpg'")
     
     return segmented_image
 
 if __name__ == "__main__":
     # 请将下面的路径替换为你自己拍摄的图像路径
-    image_path = "C:\\Users\\liuzihao\\Desktop\\study\\cv\\seg\\data\\img2.jpg"  # 替换为你的图像路径
+    image_path = "..\\data\\img2.jpg"  # 替换为你的图像路径
     
     # 可以调整这些参数来获得更好的分割效果
     try:

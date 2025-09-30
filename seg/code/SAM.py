@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
 
 def simple_panoptic_segmentation(image_path):
-    """简化的全景分割"""
+    
     # 初始化SAM
     sam_checkpoint = "sam_vit_h_4b8939.pth"
     model_type = "vit_h"
@@ -67,9 +67,9 @@ def simple_panoptic_segmentation(image_path):
 
 # 使用示例
 if __name__ == "__main__":
-    image_path = "C:\\Users\\liuzihao\\Desktop\\study\\cv\\seg\\data\\img2.jpg"  # 替换为您的图像路径
+    image_path = "..\\data\\img2.jpg"  # 替换为您的图像路径
     panoptic_result, masks = simple_panoptic_segmentation(image_path)
     
     # 保存结果
-    cv2.imwrite('simple_panoptic.jpg', cv2.cvtColor(panoptic_result, cv2.COLOR_RGB2BGR))
+    cv2.imwrite('..\\result\\SAM_result.jpg', cv2.cvtColor(panoptic_result, cv2.COLOR_RGB2BGR))
     print("done!")
