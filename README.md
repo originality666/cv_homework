@@ -1,17 +1,15 @@
-"cv_homework" 
-
-tree of cv_homework folder:
-
-cv_homework
-├─corner_det
-│  ├─code
-│  ├─data
-│  └─result
-├─edge_det
-│  ├─code
-│  ├─data
-│  └─result
-└─seg
-    ├─code
-    ├─data
-    └─result
+cv_homework/
+├─ corner_det/        # 角点检测任务
+│  ├─ code/           # 算法实现代码（如Harris角点检测等）
+│  ├─ data/           # 测试数据集（输入图像）
+│  └─ result/         # 检测结果（标记角点的图像、可视化结果等）
+│
+├─ edge_det/          # 边缘检测任务
+│  ├─ code/           # 算法实现代码（如Canny边缘检测等）
+│  ├─ data/           # 测试数据集（输入图像）
+│  └─ result/         # 检测结果（边缘图像、对比可视化等）
+│
+└─ seg/               # 图像分割任务
+   ├─ code/           # 算法实现代码（如阈值分割、语义分割等）
+   ├─ data/           # 测试数据集（输入图像、标注数据等）
+   └─ result/         # 分割结果（分割掩码、叠加可视化等）
